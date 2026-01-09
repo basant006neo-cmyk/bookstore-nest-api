@@ -1,0 +1,5 @@
+npm run build
+npx typeorm -d dist/config/typeorm.datasource.js migration:generate src/migrations/<Migrationname>
+npm run build
+npx typeorm -d dist/config/typeorm.datasource.js migration:run
+
